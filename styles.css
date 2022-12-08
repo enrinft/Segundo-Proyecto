@@ -255,21 +255,6 @@ margin-top: 0px;
     width: 400px;
 }
 
-#caracteristicas{
-    background-image: url("media/background-2.jpeg");
-    background-repeat: no-repeat;
-    background-size: 500px 400px;
-    background-position: calc(100vw - 500px) 120px;
-}
-
-#caracteristicas .contenedor{
-    text-align: initial;
-}
-
-#caracteristicas ul{
-    margin-left: 100px;
-}
-
 #final h2{
     font-size: 5em;
 }
@@ -296,7 +281,7 @@ footer .contenedor{
     }
     
     #nuestros-programas h2{
-        font size: 4em;
+        font-size: 4em;
     }
     
     #nuestros-programas h3{
@@ -341,9 +326,25 @@ footer .contenedor{
     
 }
 
-@media (min-width: 1200px) {
-    #caracteristicas{
-        background-position-x: calc(100vw - 800px);
+@media (min-width: 930px) {
+    #caracteristicas .contenedor{
+        display: flex;
+        align-items: center;
+        text-align: initial;
+        padding: 100px;
+    }
+
+    #caracteristicas .img-contenedor2 {
+        background-image: url("media/background-2.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        margin-left: auto;
+    }
+    
+    #caracteristicas ul{
+        margin-left: 100px;
     }
 }
 
